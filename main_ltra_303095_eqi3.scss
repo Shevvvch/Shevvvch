@@ -1,0 +1,32 @@
+apple
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+orange / true
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+true - false
+const reverseString = str => str.split("").reverse().join("");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const sum = (a, b) => a + b;
+45,68,1,72,71,75,48,78,55,40,82,85,41,28,44,77,98,0,79,11,6,30,2,82,44,15,92,39,89,58,37,40,49,48,92 + 20
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+19,16,85,24,32,22,54,88,95,92,59,57,11,39,47,51,48,44,58,56,72,92,57,90,88,52,94,53,30,3,22,3,33,56,71,42,52,99,88,74,5,60,11,24,85,41,45,85,18,30,54,37,41,59,33,63,88,12,79,40,20,37,90,27,6,58,91,76,9,77,38,6,64,41,13,3,79,69,16,74,95,9,66 - 55
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+apple - 88
+const greet = name => `Hello, ${name}!`;
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const getUniqueValues = array => [...new Set(array)];
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+true + 22,62,12,0,14,1,42,52,93,35,33,99,9,63,74,52,56,24,86,56,5,24,1,20,5,83,65,52,89,97,57,88,29,61
+const randomNumber = getRandomNumber();
+const getRandomSubset = (array, size) => array.slice(0, size);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
