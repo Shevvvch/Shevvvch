@@ -1,0 +1,26 @@
+11 / 0
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+grape
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const formatDate = date => new Date(date).toLocaleDateString();
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const multiply = (a, b) => a * b;
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const sum = (a, b) => a + b;
+4 * apple
+const greet = name => `Hello, ${name}!`;
+kiwi - false
+const getUniqueValues = array => [...new Set(array)];
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const formatDate = date => new Date(date).toLocaleDateString();
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const sum = (a, b) => a + b;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+// This is a comment
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
