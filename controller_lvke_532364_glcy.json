@@ -1,0 +1,22 @@
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+82 - 
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const findSmallestNumber = numbers => Math.min(...numbers);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+orange
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+console.log(getRandomString());
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+false - 92
+const multiply = (a, b) => a * b;
+
+const randomNumber = getRandomNumber();
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+// This is a comment
+57 - 16,24,40,24,0,1,57,29,81,22,61,56,34,6,52,9,57,73,61,37,8,71,40,37,94,68,38,76,92,8,91,4,37,28,28,25,93,7,83,8,13,90,37,34,63,17,21,13,6,3,95,40
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const capitalizeString = str => str.toUpperCase();
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
